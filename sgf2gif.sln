@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sgf2gif", "sgf2gif.vcxproj", "{990F7E8F-A704-43EF-9812-6A06104DEC00}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56} = {C739151F-5384-41DF-A1A6-F089E2C1AD56}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{990F7E8F-A704-43EF-9812-6A06104DEC00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{990F7E8F-A704-43EF-9812-6A06104DEC00}.Debug|Win32.Build.0 = Debug|Win32
+		{990F7E8F-A704-43EF-9812-6A06104DEC00}.Debug|x64.ActiveCfg = Debug|Win32
+		{990F7E8F-A704-43EF-9812-6A06104DEC00}.Release|Win32.ActiveCfg = Release|Win32
+		{990F7E8F-A704-43EF-9812-6A06104DEC00}.Release|Win32.Build.0 = Release|Win32
+		{990F7E8F-A704-43EF-9812-6A06104DEC00}.Release|x64.ActiveCfg = Release|Win32
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Debug|Win32.Build.0 = Debug|Win32
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Debug|x64.ActiveCfg = Debug|x64
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Debug|x64.Build.0 = Debug|x64
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Release|Win32.ActiveCfg = Release|Win32
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Release|Win32.Build.0 = Release|Win32
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Release|x64.ActiveCfg = Release|x64
+		{C739151F-5384-41DF-A1A6-F089E2C1AD56}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
