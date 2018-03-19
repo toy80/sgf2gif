@@ -48,6 +48,8 @@ artifacts/
 *_i.h
 *.ilk
 *.meta
+*.iobj
+*.ipdb
 *.obj
 *.pch
 *.pdb

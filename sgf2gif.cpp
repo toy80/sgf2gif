@@ -551,6 +551,11 @@ bool LoadSimpleSGF(Game & game, const string & srcPath)
 			i++;
 		}
 
+		if (src[i] == ')')
+		{
+			break;
+		}
+
 		string propName;
 
 		while(i < src.size() && src[i] >= 'A' && src[i] <= 'Z')
@@ -558,7 +563,8 @@ bool LoadSimpleSGF(Game & game, const string & srcPath)
 			propName.push_back(src[i++]);
 		}
 
-		if(propName == "") {
+		if(propName == "") 
+		{
 			return false;
 		}
 
