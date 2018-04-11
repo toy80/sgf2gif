@@ -2,7 +2,9 @@
 #define __xiofile_h
 
 #include "xfile.h"
-//#include <TCHAR.h>
+#ifndef _tfopen
+# include <TCHAR.h>
+#endif 
 
 class DLL_EXP CxIOFile : public CxFile
 	{

@@ -1,0 +1,3 @@
+*.exe
+!sgf2gif.exe
+*.gif

@@ -58,6 +58,10 @@
   #include <arpa/inet.h>
 #endif
 
+#ifdef _WIN32
+# include <Windows.h>
+#endif
+
 /////////////////////////////////////////////////////////////////////////////
 #include "xfile.h"
 #include "xiofile.h"

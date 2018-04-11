@@ -230,7 +230,7 @@ bool CxImage::CreateFromHANDLE(HANDLE hMem)
 		SetYDPI((int32_t)floor(head.biYPelsPerMeter * 254.0 / 10000.0 + 0.5));
 
 		/*//copy the pixels (old way)
-		if((pHead->biCompression != BI_RGB) || (pHead->biBitCount == 32)){ //<Jörgen Alfredsson>
+		if((pHead->biCompression != BI_RGB) || (pHead->biBitCount == 32)){ //<Jï¿½rgen Alfredsson>
 			// BITFIELD case
 			// set the internal header in the dib
 			memcpy(pDib,&head,sizeof(head));
@@ -565,7 +565,7 @@ HBITMAP CxImage::MakeBitmap(HDC hdc, bool bTransparency)
 		COLORREF* pCrBits = NULL;
 		HBITMAP hbmp = CreateDIBSection (
 			hMemDC, &bi, DIB_RGB_COLORS, (void **)&pCrBits,
-			NULL, NULL);
+			NULL, 0);
 
 		if (!hdc)
 			DeleteDC(hMemDC);
@@ -1166,7 +1166,7 @@ HBITMAP CxImage::Draw2HBITMAP(HDC hdc, int32_t x, int32_t y, int32_t cx, int32_t
 	}
 #endif
 
-	HBITMAP TmpBmp;
+	HBITMAP TmpBmp = NULL;
 
 	//find the smallest area to paint
 	RECT clipbox,paintbox;

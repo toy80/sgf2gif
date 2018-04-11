@@ -62,7 +62,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>gdiplus.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>shlwapi.lib;gdiplus.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -80,7 +80,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>gdiplus.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>shlwapi.lib;gdiplus.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
@@ -103,13 +103,8 @@
     <ClCompile Include="3rdpart\CxImage\ximawnd.cpp" />
     <ClCompile Include="3rdpart\CxImage\xmemfile.cpp" />
     <ClCompile Include="3rdpart\Quantize.cpp" />
-    <ClCompile Include="3rdpart\simplexnoise1234.cc" />
-    <ClCompile Include="pch.cc">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="sgf2gif.cc">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="3rdpart\simplexnoise1234.cpp" />
+    <ClCompile Include="sgf2gif.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3rdpart\CxImage\stdint.h" />
@@ -125,7 +120,7 @@
     <ClInclude Include="3rdpart\CxImage\xmemfile.h" />
     <ClInclude Include="3rdpart\Quantize.h" />
     <ClInclude Include="3rdpart\simplexnoise1234.h" />
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="C:\Users\foo\Desktop\resource.h" />
     <ClInclude Include="res\resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -137,7 +132,8 @@
     <Manifest Include="res\xpstyle.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="res\sgf2gif.rc" />
+    <ResourceCompile Include="res\sgf2gif.cn.rc" />
+    <ResourceCompile Include="res\sgf2gif.en.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
