@@ -483,7 +483,6 @@ wstring mbs_to_ws(UINT cp, const string& str)
 
 
 // 读字符串, 参见SGF官方定义
-// 这个函数大概有问题, 至少是没有处理UTF,BIG5等各种编码
 wstring Game::ReadStringValue(const string & src, int & i)
 {
 	string ret;
@@ -509,11 +508,11 @@ wstring Game::ReadStringValue(const string & src, int & i)
 			else
 			{
 				ret.push_back(src[i]);
-				if(src[i] < 0 && i + 1 < src.size())
+				/*if(src[i] < 0 && i + 1 < src.size())
 				{
 					i++;
 					ret.push_back(src[i]);
-				}
+				}*/
 			}
 			i++;
 		}
